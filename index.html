@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFE</title>
+    <link rel="icon" type="image/x-icon" href="icons/ggfavicon.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <!--NAVIGATION MENU
+        Make icon the only nav element? and the rest a "tooltip" with project info on hover?
+        change them to >div>, and place img in an <a> with onhover function also, that "Shows" Nav_project_text
+        -->
+        <div class="Nav_menu_container">
+            <div class="Nav_project">
+                <a onclick="scrollSmoothTo('top')" class="Nav_project_icon">
+                    <img src="icons/navtop.svg" alt="totop-icon" class="filter-pink">
+                </a>
+            </div>
+
+            <div class="Nav_project">
+                <a class="Nav_project_icon" onclick="scrollSmoothTo('dp')">
+                    <img src="icons/die1.svg" alt="roman-three-icon" class="filter-pink">
+                </a>
+                <div class="Nav_project_text">
+                    <h6>design project</h6>
+                    <div class="Skills">
+                        <h5 class="Skill">UI DESIGNER</h5>
+                        <h5 class="Skill">DIGITAL PROTOTYPING</h5>
+                        <h5 class="Skill">SUSTAINABLE USE</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Nav_project">
+                <a class="Nav_project_icon" onclick="scrollSmoothTo('wigi')">
+                    <img src="icons/die2.svg" alt="roman-three-icon" class="filter-pink">
+                </a>
+                <div class="Nav_project_text">
+                    <h6>when interaction goes inclusive</h6>
+                    <div class="Skills">
+                        <h5 class="Skill">PROJECT MANAGER</h5>
+                        <h5 class="Skill">EMPIRICAL STUDIES</h5>
+                        <h5 class="Skill">RESPECTFUL INCLUSION</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Nav_project">
+                <a class="Nav_project_icon" onclick="scrollSmoothTo('meb')">
+                    <img src="icons/die3.svg" alt="roman-three-icon" class="filter-pink">
+                </a>
+                <div class="Nav_project_text">
+                    <h6>micro-event board</h6>
+                    <div class="Skills">
+                        <h5 class="Skill">UX DESIGNER</h5>
+                        <h5 class="Skill">SCENARIO PROTOTYPING</h5>
+                        <h5 class="Skill">USER AUTONOMY</h5>
+                    </div>
+                </div>
+            </div>
+
+        <!--
+            <div class="Nav_project">
+                <a class="Nav_project_icon" onclick="scrollSmoothTo('bt')">
+                    <img src="icons/die4.svg" alt="roman-four-icon" class="filter-pink">
+                </a>
+                <div class="Nav_project_text">
+                    <h6>bachelor's thesis: aesthetic sonification</h6>
+                    <div class="Skills">
+                        <h5 class="Skill">UX RESEARCHER</h5>
+                        <h5 class="Skill">QUALITATIVE EVALUATION</h5>
+                        <h5 class="Skill">SONIFICATION AESTHETICS</h5>
+                    </div>
+                </div>
+            </div>
+        -->
+
+            <div class="Nav_project">
+                <a onclick="scrollSmoothTo('bot')" class="Nav_project_icon">
+                    <img src="icons/navbot.svg" alt="tobottom-icon" class="filter-pink">
+                </a>
+            </div>
+        </div>
+
+    <!--FRONT PAGE
+    Add SoMe link icons and email icons on a centered row instead-->
+    <div class="Page_container" id="top">
+        <!--
+        <img src = "icons/mosaic.svg" id="Mosaic"/>
+    -->
+        <h1>
+            <span class="bigFont">G</span><span class="smallerFont">ustav </span><span class="bigFont">F</span><span class="smallerFont">ridthiof </span><span class="bigFont">E</span><span class="smallerFont">ngbo</span>
+        </h1>
+        <h3>DIGITAL DESIGN</h3>
+        <div id="about">
+            <p>
+                Hi! I'm Gustav, a danish master's student at Aarhus University. I love experiencing concerts at small venues, good beer and food, and creating stuff. I've always had a tendency towards the arts, combined with a deep fascination of technology. After a year of studying electronics engineering i dropped out, as I found myself always being way more intrigued by the question of "why?" rather than "how?", never getting the answers I was craving. This background, however, provided skills that prove extremely useful in digital design.
+                <br><br>
+                In design projects, I often find myself being quite flexible, but often taking the role of project lead, as I have high familiarity with creative and innovative processes, and the ability to see the bigger picture. I therefore studied team innovation and group psychology during my exchange abroad to improve my leadership skills. Due to my background, I also excel at developing physical prototypes using electronics. My passion for projects that are ethical, sustainable, and inclusive is very high.
+            </p>
+            <div id="contactmail">
+                    <p>You can contact me at: gustavfe@gmail.com</p>
+            </div>
+        </div>
+        <div id="linktree">
+            <a href="mailto:gustavfe@gmail.com"><img src="icons/email.svg" alt="email-icon" class="filter-pink"></a>
+            <a href="download/cv_design.pdf" download=""><img src="icons/cv.svg" alt="cv" class="filter-pink"></a>
+            <a href="https://www.instagram.com/gustafringbo/"><img src="icons/instagram.svg" alt="instagram" class="filter-pink"></a>
+            <a href="https://www.linkedin.com/in/gustafringbo/"><img src="icons/linkedin.svg" alt="linkedin" class="filter-pink"></a>
+        </div>
+    </div>
+
+    <!--DESIGN PROJECT-->
+    <div class="Page_container" id="dp">
+        <h2>design project</h2>
+        <div class="Skills">
+            <h5 class="Skill">UI DESIGNER</h5>
+            <h5 class="Skill">DIGITAL PROTOTYPING</h5>
+            <h5 class="Skill">SUSTAINABLE USE</h5>
+        </div>
+        <div class="Project_container">
+            <div class="Project_text">
+                <h4>Sustainable energy futures</h4>
+                <p>
+                    This project was a part of my 4th semester at Aarhus University, and had sustainable energy futures as its overall theme. Several cases were presented by businesses, and my group decided to work with transport, and more specifically e-bikes. Aarhus is a highly bike friendly student city with plenty of hills, meaning e-bikes are the perfect solution for many citizens. Though still travel by car, causing heavy traffic in some areas, their reasons were often valid. Simultaneously, a solution that makes car-owners acquire an e-bike, is not the most sustainable solution. As e-bikes are already fairly common in Aarhus, we chose to create a design that could make existing e-bikes last longer, and make them more sustainable.                </p>
+            </div>
+            <div class="Project_text">
+                <h4>Batteritta</h4>
+                <p>
+                    Batteritta is essentially an e-bike battery avatar, an anthropomorphization of the battery that communicates the battery's needs and status. It is heavily inspired by the 90's toy pet, the Tamagotchi, and is designed to facilitate an intuitive relationship with your battery, to help you care for it, and make it stay strong for longer, and increase its lifetime. The most wasteful and expensive part of an e-bike is its battery, meaning there is both economic, functional and environmental incentive to take proper care of it. Using anthropomorphization, we offer a fourth emotional incentive and a pet avatar, which align perfectly with the actual optimal conditions for preserving a large lithium battery.                 </p>
+            </div>
+        </div>
+        <div class="Project_image_wide">
+            <img src="images/dpprocess1.jpeg" alt="">
+        </div>
+        <p id="wideimgtext">design expo with Digital Design and Information Sciences at Aarhus University</p>
+        <div class="Project_container">
+            <div class="Project_text">
+                <h4>My role in the project</h4>
+                <p>
+                    In this design project, I worked with 2 other digital design students. I functioned as project lead, UX-designer and UI-designer. During the early research stages, I suggested methods, facilitated processes and took initiative when reframing the problem. I facilitated some interviews, a couple of internal ideations and evaluations, as well as the construction of personas to be used throughout the rest of the project. I worked on lo-fi prototypes on paper and in digital design software, before finally designing and programming the interface of an interactive prototype on a raspberryPi in python, using a 32x32 LED display.                </p>
+            </div>
+            <div class="Project_text">
+                <h4>The process</h4>
+                <p>
+                    The project began with a very broad problem, and initially uncreative and non-impactful problem statements, including trying to influence car-users to use their bike instead, or making e-bikes more fun or convenient to use. After thorough UX research, we found that car-owners usually go by car because of benefits that an e-bike can't offer. The problem had to be reframed to focus on the e-bikes that are already in use, and making them more sustainable. This philosophy is also much needed currently, to counteract the consumerist tendencies prevalent in western society especially. The prototype and project were presented at the annual design expo at Aarhus University, and won the title of "most innovative idea" by vote.                </p>
+            </div>
+        </div>
+        <div class="Project_container">
+            <div class="Project_image">
+                <img src="images/dpprocess2.jpg" alt="">
+                <p>celebrating "most innovative idea" prize</p>
+            </div>
+            <div class="Project_image">
+                <img src="images/dpprocess3.jpg" alt="">
+                <p>batteritta interactive prototype</p>
+            </div>
+        </div>
+        <div class="Project_container">
+            <div class="tldr">
+                <h4>TL:DR</h4>
+                <p>
+                    Working in a group of 3 students, I presented a project at a design expo at Aarhus University. The theme was "sustainable energy futures". Batteritta is a battery Tamagotchi, representing the battery's needs and status in an anthropomorphization to help its user take better care of it, making it last longer. I managed the team process, worked with UX, and was the main UI-designer and developer for our final prototype. Batteritta won "most innovative idea" by vote at the design expo.                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--WHEN INTERACTION GOES INCLUSIVE-->
+    <div class="Page_container" id="wigi">
+        <h2>when interaction goes inclusive</h2>
+        <div class="Skills">
+            <h5 class="Skill">IX DESIGNER</h5>
+            <h5 class="Skill">EMPIRICAL STUDIES</h5>
+            <h5 class="Skill">RESPECTFUL INCLUSION</h5>
+        </div>
+        <div class="Project_container">
+            <div class="Project_text">
+                <h4>Region Midtjylland & inclusion</h4>
+                <p>
+                    Different health workers from Region Midtjylland presented a design case consisting of the issues of inclusion in the health sector. One of these issues lies in the handling of homeless people by hospitals especially, where their systems are not built to handle patients with no address. Thus, homeless patients are not able to be treated with proper dignity and professionalism, and are not able to be monitored or contacted after being discharged.                </p>
+            </div>
+            <div class="Project_text">
+                <h4>Discharge report re-design</h4>
+                <p>
+                    My team's solution to the problem, was to focus on the issues experienced by nurses in the current discharge system, and design an alternative. As the problem was complex and sensitive, a larger coordinated solution would be required, where institutions could cooperate with groups like the existing "street team", to monitor people where they are. to design an intuitive and user friendly interface, that could be integrated, we decided to begin a complete re-design of the current discharge report, MedCom. Our design offered fewer interactions, much clearer visual hierarchy and communication, and widgets to make interaction easier, compared to the old system.                </p>
+            </div>
+        </div>
+        <div class="Project_image_wide">
+            <img src="images/wigiprocess1.jpg" alt="">
+            <p>from: https://shorturl.at/xAECO</p>
+        </div>
+        <p id="wideimgtext">photo: https://arkiv.arbejderen.dk/sites/default/files/styles/format_16x9/public/Hjeml%C3%B8s-11.jpg?itok=YRrq4WQ0&c=cfab2ee17c5267b5612fdacd95867cde</p>
+        <div class="Project_container">
+            <div class="Project_text">
+                <h4>My role in the project</h4>
+                <p>
+                    During the project, I was in had the responsibility for managing the project, planning our work, and keeping focus on the task, while also doing UX studies and interface design. I participated in an important ethnographic field study, where a previously homeless person offered a guided tour of the streets of Aarhus, while telling us about life as a homeless person in the city. I further facilitated an divergent ideation workshop, worked on our interactive prototype and facilitated an interview with the head nurse of Randers Hospital.                </p>
+            </div>
+            <div class="Project_text">
+                <h4>The process</h4>
+                <p>
+                    In the early stages of our process, we were unsure of how a digital solution would be able to make a difference. In many areas, the issue we were dealing with, would be better solved with improvements to social or political areas. After much research, we decided our expertise was best suited to improve the current out-dated discharge system used by nurses. The entire medical communications system was complex and sub-optimal according to nurses and our own observations. We therefore began a complete re-design of patient discharge, that assumed cooporation possibilities with existing medical organisations that specialize in dealing with homeless people. Though implementation would require a re-design of MedCom entirely and structural expansions of the communication network, it would provide improved UX for nurses and possibilities for better monitoring and more dignified treatment of homeless people.                </p>
+            </div>
+        </div>
+        <div class="Project_container">
+            <div class="Project_image">
+                <img src="images/wigiprocess2.jpeg" alt="">
+                <p>discharge report re-design prototype</p>
+            </div>
+            <div class="Project_image">
+                <img src="images/wigiprocess3.jpeg" alt="">
+                <p>UX studies</p>
+            </div>
+        </div>
+        <div class="Project_container">
+            <div class="tldr">
+                <h4>TL:DR</h4>
+                <p>
+                    Employees from Region Midtjylland presented a wide array of issues concerning inclusivity in the health sector. We chose to focus on the sensitive issue of homeless people, particularly when discharging them, as current systems are not built to handle this. Our solution was a rework of the current discharge report interface, with an alternative path for patients with no address. I was highly involved with qualitative etnographic studies, and managing the agile project phases and team efforts. Large areas of the issue were, however, discovered to not be requiring non-technological solutions.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--MICRO EVENT BOARD - add more about MY roles and stuff, and not OUR or WE-->
+    <div class="Page_container" id="meb">
+        <h2>micro-event board</h2>
+        <div class="Skills">
+            <h5 class="Skill">UX DESIGNER</h5>
+            <h5 class="Skill">SCENARIO PROTOTYPING</h5>
+            <h5 class="Skill">USER AUTONOMY</h5>
+        </div>
+        <div class="Project_container">
+            <div class="Project_text">
+                <h4>Dokk1 micro-events</h4>
+                <p>
+                    Dokk1 is a library and an open cultural institution that encourages community, learning, and play for all ages. Visitors can have a difficult time, however, arranging micro-events. Micro-events can be described as spontaneously arranged events, or events that require low amounts of organization. This was the case presented to us digital design students by the cultural manager of Dokk1, with a five day project deadline to present a prototype and the design-process.
+                </p>
+            </div>
+            <div class="Project_text_alt">
+                <h4>Micro-event board</h4>
+                <p>
+                    After five intense days we presented our physical lo-fi prototype, which can best be described as a physical magnetic micro-event schedule. The prototype has a grid layout with time slots, and magnetic event cards, some with prewritten events to inspire guests, and some blank that can be filled out with whiteboard markers. When a card is placed on a time-slot, a small location tracker is released from it. The location of the tracker is shown on a map above the grid schedule, so arrangers can find a suitable area after adding their micro-event to the board.
+                </p>
+            </div>
+        </div>
+        <div class="Project_image_wide">
+            <img src="images/mebprocess1.jpg" alt="">
+        </div>
+        <p id="wideimgtext">ideation at DOKK1</p>
+        <div class="Project_container">
+            <div class="Project_text">
+                <h4>My role in the project</h4>
+                <p>
+                    In this project, I worked in a group of four, along with three other digital design students. Due to time pressure we had to work fast, and as a result I held a multitude of changing roles, though mostly worked as UX designer on the project. I worked with research methods, such as desktop research, semi-structured interviews, and evaluation. I also facilitated an ideation workshop, evaluation, and planned the before- and now-scenario. Later in the process, I worked on the development of both prototype iterations, and the design of the interface. In the end we presented our solution to highly satisfied professors and case-presenters, who saw great potential in the idea.
+                </p>
+            </div>
+            <div class="Project_text">
+                <h4>The process</h4>
+                <p>
+                    The process was highly cooperative, and the entire group therefore took part in all stages of it. Through the entire project I took on the role of the facilitator of the group, as all other members had a more careful approach. I did my best to foster open communication and high cohesiveness, and making sure we didn't get stuck on an issue or detail. In the end, the design was a solution that was easy to use for all ages, inspired visitors to arrange events, and was easy to notice.
+                </p>
+            </div>
+        </div>
+        <div class="Project_container">
+            <div class="Project_image">
+                <img src="images/mebprocess2.jpg" alt="">
+                <p>DOKK1 planned events</p>
+            </div>
+            <div class="Project_image">
+                <img src="images/mebprocess3.jpg" alt="">
+                <p>micro-event board prototype</p>
+            </div>
+        </div>
+        <div class="Project_container">
+            <div class="tldr">
+                <h4>TL:DR</h4>
+                <p>
+                    Dokk1 presented a design case to the problem of visitors having difficulties arranging spontaneous events. I worked in a group of students and created a large physical event planner that was easy to use for all ages. Throughout the process i was the main facilitator, and worked with UX, as well as UI methods. The final presentation and prototype received great feedback.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+        <!--BACHELOR'S THESIS
+    <div class="Page_container" id="bt">
+        <h2>bachelor's thesis: aesthetic sonification</h2>
+        <div class="Skills">
+            <h5 class="Skill">UX RESEARCHER</h5>
+            <h5 class="Skill">QUALITATIVE EVALUATION</h5>
+            <h5 class="Skill">SONIFICATION AESTHETICS</h5>
+        </div>
+        <div class="Project_container">
+            <div class="Project_text">
+                <h4>Subtitle text</h4>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
+            <div class="Project_text">
+                <h4>Subtitle text</h4>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
+        </div>
+        <div class="Project_image_wide">
+            <img src="images/bt1.jpg" alt="">
+        </div>
+        <div class="Project_container">
+            <div class="Project_text">
+                <h4>Subtitle text</h4>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
+            <div class="Project_text">
+                <h4>Subtitle text</h4>
+                <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
+        </div>
+        <div class="Project_container">
+            <div class="Project_image">
+                <img src="images/dpprocess2.jpeg" alt="">
+                <p>lo-fi UI prototyping</p>
+            </div>
+            <div class="Project_image">
+                <img src="images/dpprocess3.jpg" alt="">
+                <p>batteritta interactive prototype</p>
+            </div>
+        </div>
+        <div class="Project_container">
+            <div class="Project_text">
+                <h4>TL:DR</h4>
+                <p>
+                    Employees from Region Midtjylland presented a wide array of issues concerning inclusivity in the health sector. We chose to focus on the sensitive issue of homeless people, particularly when discharging them, as current systems are not built to handle this. Our solution was a rework of the current discharge report interface, with an alternative path for patients with no address. I was highly involved with qualitative etnographic studies, and managing the agile project phases and team efforts. Large areas of the issue were, however, discovered to not be requiring non-technological solutions.
+                </p>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <div id="bot">
+        <p>
+            Contact me: gustavfe@gmail.com <br>
+            Location: Aarhus <br>
+        </p>
+        <p>
+            developed by Gustav Fridthiof Engbo <br>
+            thx for visiting &lt;3
+        </p>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

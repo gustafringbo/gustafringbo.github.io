@@ -209,11 +209,6 @@ invert(97%) sepia(25%) saturate(6458%) hue-rotate(287deg) brightness(110%) contr
     background-color:#40345f40;
 }
 
-.tldr > p{
-    color: #eaa4bc;
-    font-family: bold1;
-}
-
  .tldr > h4{
     color: #eaa4bc;
     font-family: head3;
@@ -279,10 +274,10 @@ p {
     color: #f7e2e8;
 }
 
-p > b {
+b {
     font-family: bold1;
     line-height: 200%;
-    color: #f7e2e8;
+    color: #eaa4bc;
 }
 
 h1 {
@@ -292,7 +287,6 @@ h1 {
     font-size: 128px;
     font-weight: normal;
     text-align: center;
-    gap: 0px;
 }
 
 .bigFont {
@@ -313,7 +307,7 @@ span {
 h2 { /*project title*/
     margin: 0;
     color: rgb(15, 15, 15);
-    background-color:#eaa4bc;
+    background-color:var(--primary);
     font-size: 64px;
     font-family: head2;
     font-weight: normal;
@@ -321,7 +315,7 @@ h2 { /*project title*/
 
 h3 {
     margin: 0;
-    color: #eaa4bc;
+    color: var(--primary);
     font-size: 28px;
     font-family: head3;
     text-align: center;
@@ -331,19 +325,19 @@ h4 {
     font-size: 24px;
     margin: 0;
     font-family: head4;
-    color: #f7e2e8;
+    color: var(--text);
 }
 
 h5 {
     font-size: 16px;
     margin: 0;
     font-family: head5;
-    color: #f7e2e8;
+    color: var(--text)
 }
 
 h6 {
     font-size: 24px;
-    color: #8ceb2d;
+    color: var(--accent);
     margin: 0;
     font-family: head6;
 }
@@ -353,5 +347,5 @@ h6 {
     font-size: 12px;
     font-family: para2;
     margin: 4px;
-    color: #f7e2e8;
+    color: var(--text);
 }
